@@ -11,3 +11,5 @@ driver.save_screenshot('screenshot.png')
 elements = driver.find_elements(By.CLASS_NAME, 'release-download')
 for e in elements:
     print(e.text)
+
+driver.quit()
