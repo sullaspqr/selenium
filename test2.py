@@ -5,7 +5,7 @@ import time
 options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(options=options)
 driver.set_window_size(1920, 1080)
-
+time.sleep(1)
 driver.get("https://www.python.org/downloads/")
 driver.save_screenshot('screenshot.png')
 elements = driver.find_elements(By.CLASS_NAME, 'release-download')
